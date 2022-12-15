@@ -1,0 +1,357 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1252</width>
+    <height>708</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">QMainWindow {
+	background-color: #1a1b26;
+}
+
+QMenuBar {
+	background-color: #1a1b26;
+	color: white;
+}
+
+QPlainTextEdit {
+	background-color: #1a1b26;
+	color: white;
+	border: none
+}
+
+QTabBar::tab:selected { 
+	background: rgb(72, 76, 85); 
+	color: white; 
+}
+
+QWidget {
+	background-color: #1a1b26;
+	color: white;
+	border-color: #383b42;
+}
+
+QSplitter {
+	color: #6D6D6D;
+
+}
+
+
+
+
+
+</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <property name="styleSheet">
+    <string notr="true">QPlainTextEdit {
+	border: none;
+}
+
+ QScrollBar {
+	border: none;
+    background-color: #1a1b26;
+    width: 10px;
+    margin: 15px 0 15px 0;
+	border-radius: 0px;
+ }
+
+QScrollBar::handle {
+	border: none;
+	border-radius: 5px;
+	min-height: 25px;
+	background-color: #303249;
+}
+
+QScrollBar::handle:hover {
+	background-color: #494c6f;
+}
+
+QScrollBar::sub-line {
+	height: 20px;
+	border: none;
+	border-top-right-radius: 5px;
+	border-top-left-radius: 5px;
+	subcontrol-origin: margin;
+	subcontrol-position: top;
+	background-color: #1a1b26;
+}
+
+QScrollBar::sub-line:hover {	
+	background-color: #737373;
+}
+
+QScrollBar::add-line {
+	height: 20px;
+	border: none;
+	border-bottom-right-radius: 5px;
+	border-bottom-left-radius: 5px;
+	subcontrol-origin: margin;
+	subcontrol-position: bottom;
+	background-color: #1a1b26;
+}
+
+QScrollBar::add-line:hover {	
+	background-color: #737373;
+}
+
+
+QScrollBar::up-arrow  {
+	background: none;
+}
+
+QScrollBar::down-arrow {
+	background: none;
+}
+
+QScrollBar::add-page {
+	background: none;
+}
+
+ QScrollBar::sub-page {
+	background: none;
+}
+
+
+</string>
+   </property>
+   <layout class="QGridLayout" name="gridLayout_2">
+    <item row="0" column="0">
+     <widget class="QSplitter" name="splitter_2">
+      <property name="orientation">
+       <enum>Qt::Horizontal</enum>
+      </property>
+      <widget class="QTreeView" name="treeView">
+       <property name="styleSheet">
+        <string notr="true">QTreeView { 
+	background-color: #16161e;
+	color: #fff; 
+} 
+QHeaderView::section { 
+	background-color: #16161e;
+	color: #fff;
+	border: 1px solid #383b42;
+}
+</string>
+       </property>
+      </widget>
+      <widget class="QSplitter" name="splitter">
+       <property name="orientation">
+        <enum>Qt::Vertical</enum>
+       </property>
+       <widget class="QTabWidget" name="tabWidget">
+        <property name="tabShape">
+         <enum>QTabWidget::Triangular</enum>
+        </property>
+        <property name="currentIndex">
+         <number>-1</number>
+        </property>
+        <property name="tabsClosable">
+         <bool>true</bool>
+        </property>
+        <property name="movable">
+         <bool>true</bool>
+        </property>
+       </widget>
+       <widget class="QPlainTextEdit" name="terminal"/>
+      </widget>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1252</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuFile">
+    <property name="title">
+     <string>File</string>
+    </property>
+    <addaction name="actionNew_File"/>
+    <addaction name="actionOpen_File"/>
+    <addaction name="actionOpen_Folder"/>
+    <addaction name="actionSave"/>
+    <addaction name="actionSave_As"/>
+    <addaction name="separator"/>
+    <addaction name="actionExit"/>
+   </widget>
+   <widget class="QMenu" name="menuEdit">
+    <property name="title">
+     <string>Edit</string>
+    </property>
+    <addaction name="actionCopy"/>
+    <addaction name="actionPaste"/>
+    <addaction name="actionUndo"/>
+    <addaction name="actionRedo"/>
+   </widget>
+   <widget class="QMenu" name="menuView">
+    <property name="title">
+     <string>View</string>
+    </property>
+    <addaction name="actionFont"/>
+    <addaction name="separator"/>
+    <addaction name="actionFull_Screen"/>
+   </widget>
+   <widget class="QMenu" name="menuFlow">
+    <property name="title">
+     <string>Flow</string>
+    </property>
+   </widget>
+   <addaction name="menuFile"/>
+   <addaction name="menuEdit"/>
+   <addaction name="menuView"/>
+   <addaction name="menuFlow"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <action name="actionNew_File">
+   <property name="text">
+    <string>New File</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+N</string>
+   </property>
+  </action>
+  <action name="actionOpen_File">
+   <property name="text">
+    <string>Open File</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+O</string>
+   </property>
+  </action>
+  <action name="actionOpen_Folder">
+   <property name="text">
+    <string>Open Folder</string>
+   </property>
+  </action>
+  <action name="actionSave">
+   <property name="text">
+    <string>Save</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+S</string>
+   </property>
+  </action>
+  <action name="actionSave_As">
+   <property name="text">
+    <string>Save As</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+Shift+S</string>
+   </property>
+  </action>
+  <action name="actionExit">
+   <property name="text">
+    <string>Exit</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+Q</string>
+   </property>
+  </action>
+  <action name="actionCopy">
+   <property name="text">
+    <string>Copy</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+C</string>
+   </property>
+  </action>
+  <action name="actionPaste">
+   <property name="text">
+    <string>Paste</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+V</string>
+   </property>
+  </action>
+  <action name="actionUndo">
+   <property name="text">
+    <string>Undo</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+Z</string>
+   </property>
+  </action>
+  <action name="actionRedo">
+   <property name="text">
+    <string>Redo</string>
+   </property>
+   <property name="toolTip">
+    <string>Redo</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+Y</string>
+   </property>
+  </action>
+  <action name="actionFont">
+   <property name="text">
+    <string>Font</string>
+   </property>
+  </action>
+  <action name="actionFull_Screen">
+   <property name="text">
+    <string>Full Screen</string>
+   </property>
+   <property name="shortcut">
+    <string>F11</string>
+   </property>
+  </action>
+  <action name="actionRun">
+   <property name="icon">
+    <iconset resource="resources.qrc">
+     <normaloff>:/images/runButton.png</normaloff>:/images/runButton.png</iconset>
+   </property>
+   <property name="text">
+    <string>Run</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+R</string>
+   </property>
+  </action>
+  <action name="maximizeButton">
+   <property name="icon">
+    <iconset resource="resources.qrc">
+     <normaloff>:/images/maximizeButtonIcon.png</normaloff>:/images/maximizeButtonIcon.png</iconset>
+   </property>
+   <property name="text">
+    <string>maximize</string>
+   </property>
+  </action>
+  <action name="minimizeButton">
+   <property name="icon">
+    <iconset resource="resources.qrc">
+     <normaloff>:/images/minimizeButtonIcon.png</normaloff>:/images/minimizeButtonIcon.png</iconset>
+   </property>
+   <property name="text">
+    <string>minimize</string>
+   </property>
+  </action>
+  <action name="exitButton">
+   <property name="icon">
+    <iconset resource="resources.qrc">
+     <normaloff>:/images/exitButtonIcon.png</normaloff>:/images/exitButtonIcon.png</iconset>
+   </property>
+   <property name="text">
+    <string>exit</string>
+   </property>
+  </action>
+ </widget>
+ <resources>
+  <include location="resources.qrc"/>
+ </resources>
+ <connections/>
+</ui>

@@ -1,0 +1,9 @@
+<RCC>
+    <qresource prefix="/images">
+        <file>runButton.png</file>
+        <file>maximizeButtonIcon.png</file>
+        <file>minimizeButtonIcon.png</file>
+        <file>exitButtonIcon.png</file>
+        <file>flowIcon.png</file>
+    </qresource>
+</RCC>
