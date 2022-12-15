@@ -41,7 +41,9 @@ https://user-images.githubusercontent.com/57378494/207727699-343550d9-a0f4-4b36-
 ```Check out the latest release here:``` [Latest Release](https://github.com/AndersHaroldson/FlowPlusPlus/releases/latest)
 
 ## Acknowledgements
-
+  - Syntax highlighting used: [QSourceHighlite by Waqar144](https://github.com/Waqar144/QSourceHighlite)
+  - Icons used: [Icons8 Pichon](https://icons8.com/app/windows)
+  - Line numbering & highlighting: [QT-6 Docs](https://doc.qt.io/qt-6/qtwidgets-widgets-codeeditor-example.html)
 
 
 ## License
