@@ -31,7 +31,7 @@ MainWindow::MainWindow(QWidget *parent)
     ui->menubar->setCornerWidget(windowBar);
 
     ui->menubar->insertMenu(ui->menuFile->menuAction(), ui->menuFlow);
-    ui->menuFlow->setIcon(QIcon(":/images/flowIcon.png"));
+    ui->menuFlow->setIcon(QIcon(":/images/images/flowIcon.png"));
 
     // Set up text edit & new tab
     codeEdit = (QPlainTextEdit*) ui->tabWidget->widget(tabIndex);

@@ -313,7 +313,7 @@ QHeaderView::section {
   <action name="actionRun">
    <property name="icon">
     <iconset resource="resources.qrc">
-     <normaloff>:/images/runButton.png</normaloff>:/images/runButton.png</iconset>
+     <normaloff>:/images/images/runButton.png</normaloff>:/images/images/runButton.png</iconset>
    </property>
    <property name="text">
     <string>Run</string>
@@ -325,7 +325,7 @@ QHeaderView::section {
   <action name="maximizeButton">
    <property name="icon">
     <iconset resource="resources.qrc">
-     <normaloff>:/images/maximizeButtonIcon.png</normaloff>:/images/maximizeButtonIcon.png</iconset>
+     <normaloff>:/images/images/maximizeButtonIcon.png</normaloff>:/images/images/maximizeButtonIcon.png</iconset>
    </property>
    <property name="text">
     <string>maximize</string>
@@ -334,7 +334,7 @@ QHeaderView::section {
   <action name="minimizeButton">
    <property name="icon">
     <iconset resource="resources.qrc">
-     <normaloff>:/images/minimizeButtonIcon.png</normaloff>:/images/minimizeButtonIcon.png</iconset>
+     <normaloff>:/images/images/minimizeButtonIcon.png</normaloff>:/images/images/minimizeButtonIcon.png</iconset>
    </property>
    <property name="text">
     <string>minimize</string>
@@ -343,7 +343,7 @@ QHeaderView::section {
   <action name="exitButton">
    <property name="icon">
     <iconset resource="resources.qrc">
-     <normaloff>:/images/exitButtonIcon.png</normaloff>:/images/exitButtonIcon.png</iconset>
+     <normaloff>:/images/images/exitButtonIcon.png</normaloff>:/images/images/exitButtonIcon.png</iconset>
    </property>
    <property name="text">
     <string>exit</string>
