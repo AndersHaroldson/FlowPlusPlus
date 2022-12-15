@@ -38,10 +38,8 @@ https://user-images.githubusercontent.com/57378494/207727699-343550d9-a0f4-4b36-
 
 ## Installation
 
+```Check out the latest release here:``` [Latest Release](https://github.com/AndersHaroldson/FlowPlusPlus/releases/latest)
 
-```
-```
-    
 ## Acknowledgements
 
 
